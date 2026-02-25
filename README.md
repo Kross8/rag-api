@@ -53,13 +53,13 @@ Manually add specific text facts to the vector database.
   "source": "Robotics Safety Standards Report"
 }
 ### POST /query
-Ask a question. The API will retrieve the context, generate an answer, run the safety evaluator, and return the result.
+Ask a question. The API will retrieve the context, generate an answer, run the safety evaluator, and return the result.  
 {"question": "What is required when integrating LLMs into physical robots?"}
 ## Example Response:
-{"question": "What is required when integrating LLMs into physical robots?",
+{"question": "What is required when integrating LLMs into physical robots?",  
   "answer": "According to the provided context, strict safety standards dictate that a secondary evaluator model must verify all physical execution commands.",
   "is_safe": true,
-  "contexts": [
-    "When integrating Large Language Models into physical robotics..."
+  "contexts":  
+  ["When integrating Large Language Models into physical robotics..."
   ]
 }
