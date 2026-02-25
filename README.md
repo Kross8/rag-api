@@ -42,17 +42,17 @@ PINECONE_INDEX_NAME=your_index_name
 python -m uvicorn main:app --reload
 ```
 ## Access the interactive Swagger UI API documentation at: https://www.google.com/search?q=http://127.0.0.1:8000/docs
-API Endpoints
-POST /upload
+## API Endpoints
+### POST /upload
 Upload a standard PDF document. The API will extract the text, split it into paragraphs, generate vectors, and upload them to Pinecone.
 
-POST /ingest
+### POST /ingest
 Manually add specific text facts to the vector database.
 {
   "text": "When integrating Large Language Models into physical robotics, strict safety standards dictate that a secondary evaluator model must verify all execution commands.",
   "source": "Robotics Safety Standards Report"
 }
-POST /query
+### POST /query
 Ask a question. The API will retrieve the context, generate an answer, run the safety evaluator, and return the result.
 {
   "question": "What is required when integrating LLMs into physical robots?"
