@@ -54,7 +54,7 @@ Manually add specific text facts to the vector database.
 }
 ### POST /query
 Ask a question. The API will retrieve the context, generate an answer, run the safety evaluator, and return the result.
-{
+## {
   "question": "What is required when integrating LLMs into physical robots?"
 }
 ## Example Response:
