@@ -25,13 +25,15 @@ This system allows users to upload raw text or PDF documents, converts them into
 ```bash
 git clone [https://github.com/Kross8/rag-api.git](https://github.com/Kross8/rag-api.git)
 cd rag-api
-##2. Create a virtual environment and install dependencies
+```
+2. Create a virtual environment and install dependencies
 ```bash
 python -m venv .venv
 source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
 pip install -r requirements.txt
-##Configure Environment Variables
-##Create a .env file in the root directory and add your API keys:
+```
+Configure Environment Variables
+Create a .env file in the root directory and add your API keys:
 GROQ_API_KEY=your_groq_api_key
 PINECONE_API_KEY=your_pinecone_api_key
 PINECONE_INDEX_NAME=your_index_name
