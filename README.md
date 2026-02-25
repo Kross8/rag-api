@@ -41,7 +41,8 @@ PINECONE_INDEX_NAME=your_index_name
 ```bash
 python -m uvicorn main:app --reload
 ```
-## Access the interactive Swagger UI API documentation at: https://www.google.com/search?q=http://127.0.0.1:8000/docs
+## Access the interactive Swagger UI API documentation at:  
+https://www.google.com/search?q=http://127.0.0.1:8000/docs
 ## API Endpoints
 ### POST /upload
 Upload a standard PDF document. The API will extract the text, split it into paragraphs, generate vectors, and upload them to Pinecone.
